@@ -1,7 +1,6 @@
 var myApp = angular.module("myApp", ["ngRoute"]);
 
 
-
 myApp.config(['$routeProvider', function($routeProvider) {
 
   $routeProvider
@@ -73,8 +72,8 @@ myApp.controller('MainController', ['$scope', '$http', function($scope, $http) {
     }]);
 
 
-    myApp.controller('FavoritesController', ['$scope', '$http', function($scope, AnimalFactory) {
-      console.log('fav controller');
+    myApp.controller('FavoritesController', ['$scope', '$http', function($scope, $http) {
+      console.log('favorite controller');
 
       $scope.retrieveFavorites().then(function() {
         $scope.favorites = $scope.animalData();

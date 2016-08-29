@@ -1,22 +1,5 @@
-img {
+* {
 
-height: 600px;
-width: 600px;
-border: 0px;
+background-color: lightblue;
 
-}
-
-h1 {
-
-text-align: center;
-color: #ff6666;
-
-
-}
-
-iframe {
-
-  display: block;
-  margin: 250px;
-  padding: 80px;
 }

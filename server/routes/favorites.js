@@ -9,7 +9,7 @@ var connectionString = 'postgres://localhost:5432/adoptpet'
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({
     extended: true
-})); //probably notffact needed
+})); //probably not needed
 
 router.get('/', function(req, res) {
     var results = [];

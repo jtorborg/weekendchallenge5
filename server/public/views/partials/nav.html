@@ -1,10 +1,10 @@
-<div>
-    <div>
+<!--<div>
+    <<div>
         <div>
             <h2>Featured Pet</h2>
             <div>
                 <select name="animalList" ng-change="storeAnimal()" ng-model="animalList">
-                    <option value="" selected="selected">--Select Animal Type--</option>
+                    <option value="" selected="selected">Select Animal Type</option>
                     <option value="barnyard">Barnyard Animals</option>
                     <option value="bird">Birds</option>
                     <option value="cat">Cats</option>
@@ -20,7 +20,6 @@
         </div>
         <div ng-if="showAnimal == true">
             <div class="row">
-                <img ng-src="{{animal.media.photos.photo[2].$t}}" width="100%"></img>
                 <div></div>
                 <div>
                     <h2>{{animal.name.$t}}</h2>
