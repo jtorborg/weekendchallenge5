@@ -1,0 +1,37 @@
+<div>
+    <div>
+        <div>
+            <h2>Featured Pet</h2>
+            <div>
+                <select name="animalList" ng-change="storeAnimal()" ng-model="animalList">
+                    <option value="" selected="selected">--Select Animal Type--</option>
+                    <option value="barnyard">Barnyard Animals</option>
+                    <option value="bird">Birds</option>
+                    <option value="cat">Cats</option>
+                    <option value="dog">Dogs</option>
+                    <option value="horse">Horses</option>
+                    <option value="pig">Pigs</option>
+                    <option value="reptile">Reptiles</option>
+                    <option value="smallfurry">Small Animals</option>
+                </select>
+            </div>
+                <button ng-click="addAnimal()">Add to Favorite List</button>
+                <p id="favCounter">Favorite Count: {{favorites.length}}</p>
+        </div>
+        <div ng-if="showAnimal == true">
+            <div class="row">
+                <img ng-src="{{animal.media.photos.photo[2].$t}}" width="100%"></img>
+                <div></div>
+                <div>
+                    <h2>{{animal.name.$t}}</h2>
+                    <div ng-if= "favorite == true">
+                        <p>Added to Favorites!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <p>{{animal.description.$t}}</p>
+            </div>
+        </div>
+    </div>
+</div>

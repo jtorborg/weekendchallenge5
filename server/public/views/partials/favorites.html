@@ -1,0 +1,22 @@
+<div class="container">
+    <div class="row">
+        <h2>Favorites List</h2>
+        <p>Favorites Count: {{favorites.length}}</p>
+    </div>
+    <div ng-repeat="favorite in favorites">
+        <div>
+            <div>
+                <img ng-src="{{favorite.photo_url}}"></img>
+                <div></div>
+                <div>
+                    <h2>{{favorite.pet_name}}</h2>
+                    <p>Pet ID: {{favorite.id}}</p>
+
+                </div>
+            </div>
+            <div>
+                <p>{{favorite.description}}</p>
+            </div>
+        </div>
+    </div>
+</div>
