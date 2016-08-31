@@ -10,9 +10,9 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({
     extended: true
 })); //probably not needed
-
+//bring in favorites
 router.get('/', function(req, res) {
-    var results = [];
+    //var results = [];
     console.log("GET /favorites/");
     pg.connect(connectionString, function(err, client, done) {
         if (err) {
@@ -41,7 +41,7 @@ router.post('/', function(req, res) {
         id: pet.id,
         name: pet.name,
         description: pet.description,
-    };
+   };
 
     pg.connect(connectionString, function(err, client, done) {
         if (err) {

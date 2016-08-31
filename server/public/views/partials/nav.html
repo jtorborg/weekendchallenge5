@@ -1,19 +1,9 @@
-<!--<div>
+<div>
     <<div>
         <div>
             <h2>Featured Pet</h2>
-            <div>
-                <select name="animalList" ng-change="storeAnimal()" ng-model="animalList">
-                    <option value="" selected="selected">Select Animal Type</option>
-                    <option value="barnyard">Barnyard Animals</option>
-                    <option value="bird">Birds</option>
-                    <option value="cat">Cats</option>
-                    <option value="dog">Dogs</option>
-                    <option value="horse">Horses</option>
-                    <option value="pig">Pigs</option>
-                    <option value="reptile">Reptiles</option>
-                    <option value="smallfurry">Small Animals</option>
-                </select>
+            <div class = "col-md-6 buttons">
+                <a class = "links" href = "#favorites" role = "button"> Favorites</a>
             </div>
                 <button ng-click="addAnimal()">Add to Favorite List</button>
                 <p id="favCounter">Favorite Count: {{favorites.length}}</p>
